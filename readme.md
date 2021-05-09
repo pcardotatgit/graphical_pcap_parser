@@ -105,7 +105,7 @@ After successdul login you should be logged into the application home page.
 
 ![](assets/img/a.png)
 
-And then it is quite straight forward.
+And then it is quite straight forward. Click on STEP 1.
 
 Browse your laptop in order to select a pcap file to analyse. Upload it, then parse it, and then analyse it.
 
