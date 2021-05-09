@@ -50,8 +50,8 @@ Open a terminal window a change directory to your **working directory/flask_pcap
 
 ### git clone the scripts
 
-	git clone https://github.com/pcardotatgit/FMC_Add_Security_Rules.git
-	cd FMC_Add_Security_Rules/
+	git clone https://github.com/pcardotatgit/graphical_pcap_parser.git
+	cd graphical_pcap_parser/flask_pcap_parser
 
 ### Install a Python virtual environment
 
