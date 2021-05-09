@@ -1,0 +1,65 @@
+{
+    "children": [
+        {
+            "children": [
+                {
+                    "data": {
+                        "relation": "Some text to customize here for <b>192.168.43.9</b> +**+<br><a href=\"javascript:popup_window('https://www.google.com', 'title_title', 600, 600);\">Some actions Here</a>"
+                    },
+                    "id": "2",
+                    "name": "192.168.43.9"
+                },
+                {
+                    "children": [
+                        {
+                            "data": {
+                                "relation": "Some text to customize here for ICMP +***+<br><a href=\"javascript:popup_window('https://www.google.com', 'title_title', 600, 600);\">Some actions Here</a>"
+                            },
+                            "id": "3",
+                            "name": "ICMP"
+                        },
+                        {
+                            "children": [
+                                {
+                                    "data": {
+                                        "relation": "Some text to customize here for 0 +****+<br><a href=\"javascript:popup_window('https://www.google.com', 'title_title', 600, 600);\">Some actions Here</a>"
+                                    },
+                                    "id": "4",
+                                    "name": "0"
+                                },
+                                {
+                                    "children": [],
+                                    "data": {
+                                        "relation": "Some text to customize here for 0 +****+<br><a href=\"javascript:popup_window('https://www.google.com', 'title_title', 600, 600);\">Some actions Here</a>"
+                                    },
+                                    "id": "4",
+                                    "name": "0"
+                                }
+                            ],
+                            "data": {
+                                "relation": "Some text to customize here for ICMP +***+<br><a href=\"javascript:popup_window('https://www.google.com', 'title_title', 600, 600);\">Some actions Here</a>"
+                            },
+                            "id": "3",
+                            "name": "ICMP"
+                        }
+                    ],
+                    "data": {
+                        "relation": "Some text to customize here for <b>192.168.43.9</b> +**+<br><a href=\"javascript:popup_window('https://www.google.com', 'title_title', 600, 600);\">Some actions Here</a>"
+                    },
+                    "id": "2",
+                    "name": "192.168.43.9"
+                }
+            ],
+            "data": {
+                "relation": "Some text to customize here for 60:33:4b:13:c5:58 +*+<br><a href=\"javascript:popup_window('https://www.google.com', 'title_title', 600, 600);\">Some actions Here</a>"
+            },
+            "id": "1",
+            "name": "## 60:33:4b:13:c5:58"
+        }
+    ],
+    "data": {
+        "relation": "<center><h2>174.137.42.65<br>02:1a:11:f0:c8:3b</h2></center>"
+    },
+    "id": "0",
+    "name": "174.137.42.65<br>02:1a:11:f0:c8:3b"
+}

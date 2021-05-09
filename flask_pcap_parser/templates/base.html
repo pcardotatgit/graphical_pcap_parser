@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>PCAP Analysis</title>
+        <link rel="stylesheet" href="/static/css/cui-standard.min.css">
+    </head>
+    <body class="cui">
+        <div class="content-fluid">
+            <div class="sidebar" >
+                <div class="sidebar__header">
+                    <div class="sidebar__header-title">PCAP ANALYSIS</div>
+                </div>
+				{% block content %}{% endblock %}
+            </div>
+            <main>
+                <header class="header">
+                    <div class="header-bar container">
+                        <a class="btn btn--small btn--icon toggle-menu">
+                            <span class="icon-list-menu"></span>
+                        </a>
+                        <a class="header-bar__logo">
+                            <span class="icon-cisco"></span>
+                        </a>
+                        <div class="header-bar__main">
+                            <div class="header-breadcrumbs">
+                                <ul class="breadcrumb">
+                                    <li><a>Home</a></li>
+                                </ul>
+                            </div>
+                            <div class="header-heading">
+                                <h1 class="page-title">PCAP File Analysis Dashboard</h1>
+                            </div>
+                        </div>
+                        <div class="header-toolbar">
+                            <a href="../files/bases" class="btn btn--small btn--icon btn--primary">
+                                <span class="icon-tables"></span>
+                            </a>	
+                            <a href="javascript:popup_window('../temp/ip_destination.txt','ip_destination',800,700);" class="btn btn--small btn--icon btn--primary">
+                                <span class="icon-list-view"></span>
+                            </a>							
+                            <a class="btn btn--small btn--icon">
+                                <span class="icon-search"></span>
+                            </a>
+                            <a class="btn btn--small btn--icon">
+                                <span class="icon-alert"></span>
+                            </a>
+                            <a class="btn btn--small btn--icon">
+                                <span class="icon-cog"></span>
+                            </a>
+		                    <a class="btn btn--small btn--icon btn--negative" href="/logout">
+		                        <span class="icon-sign-out"></span>
+		                    </a>							
+                        </div>
+                    </div>
+                </header>
+                <div class="content">
+                    <div class="container">
+                        <div class="section">
+                            <h1>STEPS</h1>
+                            
+                        </div>
+                        <div class="row base-margin-top">
+                            <div class="col-md-2 text-center"><a href="./upload">
+                                <img class="thumb thumb--huge thumb--reflected" src="./static/img/upload.png">
+                                <h4 class="text-bold base-margin-top">STEP 1</h4>
+                                <p>Upload the PCAP File</p></a>
+                            </div>
+                            <div class="col-md-2 text-center">
+                                <a href="./parse"><img class="thumb thumb--huge thumb--reflected" src="./static/img/compute.png">
+                                <h4 class="text-bold base-margin-top">STEP 2</h4>
+                                <p>Parse PCAP File</p></a>
+                            </div>
+                            <div class="col-md-2 text-center">								
+                                <a href="./analysis"><img class="thumb thumb--huge thumb--reflected" src="./static/img/analysis.png">
+                                <h4 class="text-bold base-margin-top">STEP 3</h4>
+                                <p>Conversation Analysis</p>
+                            </div>
+                            <div class="col-md-2 text-center">
+                                <a href="./smart_analysis"><img class="thumb thumb--huge thumb--reflected" src="./static/img/smart_analysis.png">
+                                <h4 class="text-bold base-margin-top">STEP 4</h4>
+                                <p>Smart Analysis</p>
+                            </div>
+                            <div class="col-md-2 text-center">
+                                <a href="./block"><img class="thumb thumb--huge thumb--reflected" src="./static/img/block.png">
+                                <h4 class="text-bold base-margin-top">STEP 5</h4>
+                                <p>Deploy FW Rules</p>
+                            </div>							
+                        </div>
+                    </div>
+                </div>
+                <footer class="footer footer--new">
+                    <div class="footer__links">
+                        <ul class="list">
+                            <li><a href="http://www.cisco.com/cisco/web/siteassets/contacts/index.html" target="_blank">Contacts</a></li>
+                            <li><a href="https://secure.opinionlab.com/ccc01/o.asp?id=jBjOhqOJ" target="_blank">Feedback</a></li>
+                            <li><a href="http://www.cisco.com/c/en/us/about/sitemap.html" target="_blank">Site Map</a></li>
+                            <li><a href="http://www.cisco.com/web/siteassets/legal/terms_condition.html" target="_blank">Terms & Conditions</a></li>
+                            <li><a href="http://www.cisco.com/web/siteassets/legal/privacy_full.html" target="_blank">Privacy Statement</a></li>
+                            <li><a href="http://www.cisco.com/web/siteassets/legal/privacy_full.html#cookies" target="_blank">Cookie Policy</a></li>
+                            <li><a href="http://www.cisco.com/web/siteassets/legal/trademark.html" target="_blank">Trademarks</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__legal">
+                        <div class="footer__logo">
+                            <a href="http://www.cisco.com" target="_blank">
+                                <span class="icon-cisco"></span>
+                            </a>
+                        </div>
+                        <div class="footer__copyright">
+                            <div>Copyright &copy; 2019 Cisco Systems Inc.</div>
+                            <div>All rights reserved.</div>
+                        </div>
+                    </div>
+                </footer>
+            </main>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>PCAP Analysis</title>
+        <link rel="stylesheet" href="/static/css/cui-standard.min.css">
+    </head>
+    <body class="cui">
+        <div class="content-fluid">
+            <div class="sidebar" >
+                <div class="sidebar__header">
+                    <div class="sidebar__header-title">PCAP ANALYSIS</div>
+                </div>
+				{% block content %}{% endblock %}
+            </div>
+            <main>
+                <header class="header header--tall">
+                    <div class="header-bar container">
+                        <a href="javascript:;" class="header-bar__logo">
+                            <span class="icon-cisco"></span>
+                        </a>
+                        <div class="header-bar__main">
+                            <div class="header-breadcrumbs">
+                                <ul class="breadcrumb">
+                                    <li><a href="./">Home</a></li>
+                                    <li><span>Upload a PCAP File</span></li>
+                                </ul>
+                            </div>
+                            <div class="header-heading">
+                                <h1 class="page-title">PCAP File Upload</h1>
+                            </div>
+
+                        </div>
+                        <div class="header-toolbar">
+                            <a href="../files/bases" class="btn btn--small btn--icon btn--primary">
+                                <span class="icon-tables"></span>
+                            </a>	
+                            <a href="javascript:popup_window('../temp/ip_destination.txt','ip_destination',800,700);" class="btn btn--small btn--icon btn--primary">
+                                <span class="icon-list-view"></span>
+                            </a>							
+                            <a class="btn btn--small btn--icon">
+                                <span class="icon-search"></span>
+                            </a>
+                            <a class="btn btn--small btn--icon">
+                                <span class="icon-alert"></span>
+                            </a>
+                            <a class="btn btn--small btn--icon">
+                                <span class="icon-cog"></span>
+                            </a>
+                            <a href="./delete_table" class="btn btn--small btn--icon btn--negative">
+                                <span class="icon-delete"></span>
+                            </a>								
+		                    <a class="btn btn--small btn--icon btn--negative" href="/logout">
+		                        <span class="icon-sign-out"></span>
+		                    </a>							
+                        </div>
+                    </div>
+                </header>
+                <div class="content" style="height:100%">
+                    <div class="container">
+                        <div class="section">
+                            <div class="text-center">
+                                <h1>Upload a PCAP File</h1>
+								<form action="/upload_2" enctype="multipart/form-data" method="POST">
+								  <input class="btn btn--primary" type="file" id="myFile" name="file">
+								  <input class="btn btn--primary" type="Submit" value="Upload">
+								</form>
+                            </div>
+                        </div>
+						<hr>
+                    </div>
+                </div>
+                <footer class="footer footer--new">
+                    <div class="footer__links">
+                        <ul class="list">
+                            <li><a href="http://www.cisco.com/cisco/web/siteassets/contacts/index.html" target="_blank">Contacts</a></li>
+                            <li><a href="https://secure.opinionlab.com/ccc01/o.asp?id=jBjOhqOJ" target="_blank">Feedback</a></li>
+                            <li><a href="http://www.cisco.com/c/en/us/about/sitemap.html" target="_blank">Site Map</a></li>
+                            <li><a href="http://www.cisco.com/web/siteassets/legal/terms_condition.html" target="_blank">Terms & Conditions</a></li>
+                            <li><a href="http://www.cisco.com/web/siteassets/legal/privacy_full.html" target="_blank">Privacy Statement</a></li>
+                            <li><a href="http://www.cisco.com/web/siteassets/legal/privacy_full.html#cookies" target="_blank">Cookie Policy</a></li>
+                            <li><a href="http://www.cisco.com/web/siteassets/legal/trademark.html" target="_blank">Trademarks</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__legal">
+                        <div class="footer__logo">
+                            <a href="http://www.cisco.com" target="_blank">
+                                <span class="icon-cisco"></span>
+                            </a>
+                        </div>
+                        <div class="footer__copyright">
+                            <div>Copyright &copy; 2017 Cisco Systems Inc.</div>
+                            <div>All rights reserved.</div>
+                        </div>
+                    </div>
+                </footer>
+            </main>
+        </div>
+    </body>
+</html>

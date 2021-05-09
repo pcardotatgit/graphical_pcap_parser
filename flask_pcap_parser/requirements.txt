@@ -1,0 +1,7 @@
+flask
+sqlalchemy
+crayons
+netmiko
+sqlite3
+dpkt
+webbrowser

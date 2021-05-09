@@ -1,0 +1,84 @@
+{% if session['logged_in'] %}
+{% if PAGE_DESTINATION == "upload" %}
+{% extends "upload_base.html" %}
+{% endif %}
+{% if PAGE_DESTINATION == "upload-2" %}
+{% extends "upload_base-2.html" %}
+{% block content2 %}
+<h1>GO !</h1>
+{% endblock %}
+{% endif %}
+{% if PAGE_DESTINATION == "home"%}
+{% extends "base.html" %}
+{% endif %}
+{% if PAGE_DESTINATION == "parse"%}
+{% extends "parse_base.html" %}
+{% endif %}
+{% if PAGE_DESTINATION == "parsed"%}
+{% extends "parse_base-2.html" %}
+{% endif %}
+{% if PAGE_DESTINATION == "analysis"%}
+{% extends "analysis.html" %}
+{% endif %}
+{% if PAGE_DESTINATION == "search"%}
+{% extends "search.html" %}
+{% endif %}
+{% if PAGE_DESTINATION == "delete_table"%}
+{% extends "delete.html" %}
+{% endif %}
+{% if PAGE_DESTINATION == "delete_table_confirmed"%}
+{% extends "delete-2.html" %}
+{% endif %}
+{% if PAGE_DESTINATION == "smart_analysis"%}
+{% extends "smart_analysis.html" %}
+{% endif %}
+{% if PAGE_DESTINATION == "smart_analysis-2"%}
+{% extends "smart_analysis-2.html" %}
+{% endif %}
+{% if PAGE_DESTINATION == "smart_analysis-3"%}
+{% extends "smart_analysis-3.html" %}
+{% endif %}
+{% if PAGE_DESTINATION == "graph"%}
+{% extends "graph.html" %}
+{% endif %}
+{% if PAGE_DESTINATION == "smart_analysis-3b"%}
+{% extends "smart_analysis-3b.html" %}
+{% endif %}
+
+{% block content %}
+<ul>
+	<li class="sidebar__item"><a href="./upload">Upload a PCAP File</a></li>
+	<li class="sidebar__item"><a href="./parse">Parse PCAP File</a></li>
+	<li class="sidebar__item"><a href="./analysis">Conversation Analysis</a></li>
+	<li class="sidebar__item"><a href="./smart_analysis">Smart Analysis</a></li>
+	<li class="sidebar__item"><a href="./block">Deploy FW Objects</a></li>
+</ul>
+{% endblock %}
+
+{% else %}
+<link rel="stylesheet" href="/static/style.css" type="text/css">
+<form action="/login" method="POST">
+	<div class="login">
+		<div class="login-screen">
+			<div class="app-title">
+				<h1>Login</h1>
+			</div>
+ 
+			<div class="login-form">
+				<div class="control-group">
+				<input type="text" class="login-field" value="" placeholder="admin" name="username">
+				<label class="login-field-icon fui-user" for="login-name"></label>
+				</div>
+ 
+				<div class="control-group">
+				<input type="password" class="login-field" value="" placeholder="password" name="password">
+				<label class="login-field-icon fui-lock" for="login-pass"></label>
+				</div>
+ 
+                <input type="submit" value="Log in" class="btn btn-primary btn-large btn-block" >
+			    <br>
+			</div>
+		</div>
+	</div>
+</form>
+{% endif %}

@@ -1,0 +1,61 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>RGraph - Tree Animation Example</title>
+
+<!-- CSS Files -->
+<link type="text/css" href="./resources/css/base.css" rel="stylesheet" />
+<link type="text/css" href="./resources/css/RGraph.css" rel="stylesheet" />
+
+<!--[if IE]><script language="javascript" type="text/javascript" src="../../Extras/excanvas.js"></script><![endif]-->
+
+<!-- JIT Library File -->
+<script language="javascript" type="text/javascript" src="./resources/jit.js"></script>
+
+<!-- Example File -->
+<script language="javascript" type="text/javascript" src="data.js"></script>
+  <script language='javascript'>
+    function popup_window( url, id, width, height )
+    {
+       //extract the url parameters if any, and pass them to the called html
+       var tempvar=document.location.toString(); // fetch the URL string
+       var passedparams = tempvar.lastIndexOf("?");
+       if(passedparams > -1)
+          url += tempvar.substring(passedparams);
+      popup = window.open( url, id, 'toolbar=no,scrollbars=no,location=no,statusbar=no,menubar=no,resizable=no,width=' + width + ',height=' + height + '' );
+      popup.focus();
+    }
+  </script>
+</head>
+
+<body onload="init();">
+<div id="container">
+
+<div id="left-container">
+
+<div class="text">
+<h4>
+Clickable Relation Graph   
+</h4> 
+Click on objects in order to focus on them
+</div>
+
+<div id="id-list"></div>
+<div style="text-align:center;"><a href="javascript:popup_window('https://www.google.com', 'title_title', 600, 600);">Some actions Here</a></div>            
+</div>
+
+<div id="center-container">
+    <div id="infovis"></div>    
+</div>
+
+<div id="right-container">
+
+<div id="inner-details"></div>
+
+</div>
+
+<div id="log"></div>
+</div>
+</body>
+</html>

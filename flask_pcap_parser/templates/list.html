@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+   <body>
+   
+      <table border = 1>
+         <thead>
+            <td>Time</td>
+            <td>IP_Source</td>
+			<td>MAC_Source</td>
+            <td>IP_Destination</td>
+			<td>MAC_Destination</td>
+            <td>Protocol</td>
+			<td>Port_Source</td>
+            <td>Port_Destination</td>
+			<td>Lenght</td>			
+            <td>Info</td>
+         </thead>
+         
+         {% for row in rows %}
+            <tr>
+               <td>{{row["Time"]}}</td>
+               <td>{{row["IP_Source"]}}</td>
+               <td> {{ row["MAC_Source"]}}</td>
+               <td>{{row['IP_Destination']}}</td>	
+               <td>{{row["MAC_Destination"]}}</td>
+               <td>{{row["Protocol"]}}</td>
+               <td> {{ row["Port_Source"]}}</td>
+               <td>{{row['Port_Destination']}}</td>	
+				<td>{{row['Lenght']}}</td>
+				<td>{{row['Info']}}</td>
+            </tr>
+         {% endfor %}
+      </table>
+      
+      <a href = "/">Go back to home page</a>
+      
+   </body>
+</html>
